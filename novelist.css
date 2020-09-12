@@ -207,7 +207,15 @@ div[cid],
 
 #write {
   max-width: var(--editor-max-width);
+  width: 100%;
   color: #333;
+}
+
+@media (min-width: 740px) {
+  #write {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 img {

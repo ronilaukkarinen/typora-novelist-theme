@@ -1,6 +1,7 @@
 :root {
-	--control-text-color: #000;
-	--font-headings: "Avenir", "Brandon Text", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+  --body-background-color: #fff;
+	--body-text-color: #050505;
+	--font-headings: "Helvetica", "Avenir", "Brandon Text", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
 	--font-paragraphs: "Avenir", "Charter", "Caslon", "Merriweather", "Lora", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
 	--font-weight-paragraphs: 400;
 	--font-code: 'SFMono', 'PT Mono', Menlo, 'Courier New', monospace;
@@ -179,6 +180,7 @@ html {
 
 body,
 html {
+  background: var(--body-background-color);
   font-family: var(--font-paragraphs);
   line-height: var(--line-height-paragraphs);
   font-weight: var(--font-weight-paragraphs);
@@ -199,6 +201,12 @@ body * {
 /* type-scale.com
 1.200 - Minor Third
 */
+[mdlike="h1"],
+[mdlike="h2"],
+[mdlike="h3"]
+[mdlike="h4"],
+[mdlike="h5"],
+[mdlike="h6"],
 h1,
 .h1,
 h2,
@@ -218,24 +226,30 @@ h6,
   margin-bottom: .5rem;
 }
 
+[mdlike="h1"],
 h1,
 .h1,
 .f1 {
-  font-size: 160%;
-}
-
-h2,
-.h2,
-.f2 {
   font-size: 140%;
 }
 
+[mdlike="h2"],
+h2,
+.h2,
+.f2 {
+  font-size: 120%;
+}
+
+[mdlike="h3"],
 h3,
 .h3,
 .f3 {
   font-size: 120%;
 }
 
+[mdlike="h4"],
+[mdlike="h5"],
+[mdlike="h6"]
 h4,
 .h4,
 .f4,
@@ -245,7 +259,7 @@ h5,
 h6,
 .h6,
 .f6  {
-  font-size: 120%;
+  font-size: 100%;
 }
 
 #write ul,
@@ -296,7 +310,7 @@ div[cid],
 #write {
   max-width: var(--editor-max-width);
   width: 100%;
-  color: #333;
+  color: var(--body-text-color);
 }
 
 @media (min-width: 740px) {
@@ -357,10 +371,6 @@ p {
   padding: 0;
 }
 
-#write.first-line-indent p {
-  text-indent: 1.25rem;
-}
-
 /* Do not indent paragraph after empty paragraph or headings */
 #write.first-line-indent h1 + p,
 #write.first-line-indent h2 + p,
@@ -371,8 +381,24 @@ p {
 #write.first-line-indent p:empty + p,
 #write.first-line-indent ul p,
 #write.first-line-indent ol p,
-#write.first-line-indent blockquote p {
+#write.first-line-indent blockquote p,
+#write.first-line-indent [mdlike="h1"] + p,
+#write.first-line-indent [mdlike="h2"] + p,
+#write.first-line-indent [mdlike="h3"] + p,
+#write.first-line-indent [mdlike="h4"] + p,
+#write.first-line-indent [mdlike="h5"] + p,
+#write.first-line-indent [mdlike="h6"] + p,
+#write.first-line-indent [mdlike="h1"],
+#write.first-line-indent [mdlike="h2"],
+#write.first-line-indent [mdlike="h3"],
+#write.first-line-indent [mdlike="h4"],
+#write.first-line-indent [mdlike="h5"],
+#write.first-line-indent [mdlike="h6"] {
   text-indent: 0;
+}
+
+#write.first-line-indent p {
+  text-indent: 1.25rem;
 }
 
 h1 + p,
@@ -426,18 +452,6 @@ blockquote p:first-child {
 
 blockquote p:last-child {
 	margin-bottom: 0;
-}
-
-blockquote em {
-  color: #000;
-}
-
-blockquote footer {
-  font-size: .85rem;
-  font-style: normal;
-  background-color: #fff;
-  color: #7a7a7a;
-  border-color: transparent;
 }
 
 @media screen and (min-width: 48em) {

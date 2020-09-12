@@ -2,8 +2,6 @@
 
 Typora CSS theme. Plain and simple. Aiming for the best experience for writing a novel.
 
-![Screenshot 1](https://i.imgur.com/Twky3dv.png "Screenshot")
-
 ### Installation
 
 1. Download this repo and unpack CSS.
@@ -14,3 +12,5 @@ Typora CSS theme. Plain and simple. Aiming for the best experience for writing a
 **Please note:** You can use any fonts with this theme. You will need to place your downloaded or purchased fonts to the novelist/ directory.
 
 All fonts are just regular, **bold**, *regular italic* and ***bold italic***.
+
+![Screenshot 1](https://i.imgur.com/Twky3dv.png "Screenshot")

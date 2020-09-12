@@ -2,7 +2,7 @@
 
 Typora CSS theme. Plain and simple. Aiming for the best experience for writing a novel.
 
-![Screenshot 1](https://i.imgur.com/lFi4zKe.png "Screenshot")
+![Screenshot 1](https://i.imgur.com/SM8mcT2.png "Screenshot")
 
 ### Installation
 

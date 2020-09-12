@@ -186,7 +186,14 @@ html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  text-rendering: optimizeLegibility;
+}
+
+body,
+body * {
+  text-size-adjust: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 /* type-scale.com

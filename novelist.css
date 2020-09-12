@@ -1,7 +1,7 @@
 :root {
-	--control-text-color: #2a2a2a;
-	--font-headings: "Lato", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
-	--font-paragraphs: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+	--control-text-color: #000;
+	--font-headings: "Avenir", "Brandon Text", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+	--font-paragraphs: "Avenir", "Charter", "Caslon", "Merriweather", "Lora", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
 	--font-weight-paragraphs: 400;
 	--font-code: 'SFMono', 'PT Mono', Menlo, 'Courier New', monospace;
 	--font-weight-headings: 700;
@@ -10,13 +10,89 @@
 	--line-height-headings: 1.23;
   --line-height-paragraphs: 1.7;
   --heading-char-color: #ababab;
-  --editor-max-width: 720px;
+  --editor-max-width: 670px;
 }
 
 /**
  * forked from pixyll.com
  * MIT license
  */
+
+/* Charter */
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Charter'), url('./novelist/charter-400.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Charter'), url('./novelist/charter-400-italic.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Charter'), url('./novelist/charter-700.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Charter'), url('./novelist/charter-700-italic.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Caslon */
+@font-face {
+  font-family: 'Caslon';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Caslon'), url('./novelist/caslon-400.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Caslon';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Caslon Italic'), url('./novelist/caslon-400-italic.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Brandon Text */
+@font-face {
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Brandon Text'), url('./novelist/brandon-text-700.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Lora */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lora'), local('Lora'), url('./novelist/lora-v16-latin-regular.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Lora Italic'), local('Lora-Italic'), url('./novelist/lora-v16-latin-italic.woff') format('woff');
+  unicode-range: U+0000 - 00FF, U+0131, U+0152 - 0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000 - 206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* Merriweather */
 @font-face {
@@ -110,6 +186,7 @@ html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 /* type-scale.com

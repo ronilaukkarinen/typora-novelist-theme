@@ -1,4 +1,4 @@
-# Typora Novelist - A distract-free writing theme for Typora
+# Typora Novelist - A distraction free writing theme for Typora
 
 Typora CSS theme. Plain and simple. Aiming for the best experience for writing a novel.
 
@@ -13,4 +13,4 @@ Typora CSS theme. Plain and simple. Aiming for the best experience for writing a
 
 All fonts are just regular, **bold**, *regular italic* and ***bold italic***.
 
-![Screenshot 1](https://i.imgur.com/Twky3dv.png "Screenshot")
+![Screenshot 1](https://i.imgur.com/R3Ka9fA.png "Screenshot")
